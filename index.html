@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>목소리 샘플 비교</title>
+<style>
+  body { margin: 0; font-family: system-ui, "Malgun Gothic", sans-serif; background: #f6f4fb; color: #222; }
+  main { max-width: 760px; margin: 0 auto; padding: 24px 16px 40px; }
+  h1 { font-size: 22px; margin: 0 0 6px; }
+  p.lead { margin: 0 0 20px; color: #555; font-size: 14px; line-height: 1.5; }
+  h2 { font-size: 17px; margin: 24px 0 10px; }
+  .card { background: #fff; border-radius: 12px; padding: 14px 16px; margin-bottom: 10px; box-shadow: 0 1px 3px rgba(0,0,0,.08); border: 2px solid transparent; cursor: pointer; }
+  .card[data-choice-selected] { border-color: #7b5cd6; }
+  .name { font-weight: 700; font-size: 16px; }
+  .desc { color: #555; font-size: 13px; margin: 4px 0 10px; }
+  audio { width: 100%; }
+  .script { background: #fff; border-radius: 10px; padding: 10px 14px; font-size: 13px; color: #444; line-height: 1.6; }
+</style>
+</head>
+<body>
+<main>
+  <h1>귀여운 여성 목소리 샘플</h1>
+  <p class="lead">JOHN GLEEP 대본의 놀라는 줄, 속삭이는 줄, 반전 줄을 Eleven v4로 읽힌 샘플이에요. 언어별로 마음에 드는 카드를 하나씩 눌러 선택해 주세요.</p>
+
+  <h2>한국어</h2>
+  <div class="script">잠깐, 이 외계인 지금 사람 납치하는 거예요?! 네, 일부러요. 근데 이유가 더 어이없어요. … 근데 진짜 목표는요… 망가진 결혼 생활 되살리기예요.</div>
+  <div class="card" data-choice="ko-Aria" data-choice-group="한국어" data-choice-label="Aria">
+    <div class="name">Aria</div><div class="desc">밝고 귀엽고 또렷한 젊은 목소리</div>
+    <audio controls preload="metadata" src="ko-Aria.mp3"></audio>
+  </div>
+  <div class="card" data-choice="ko-Sena" data-choice-group="한국어" data-choice-label="Sena">
+    <div class="name">Sena</div><div class="desc">친근하고 쾌활한 톤, 대사용으로도 쓰이는 목소리</div>
+    <audio controls preload="metadata" src="ko-Sena.mp3"></audio>
+  </div>
+  <div class="card" data-choice="ko-Yeonhee" data-choice-group="한국어" data-choice-label="Yeonhee">
+    <div class="name">Yeonhee</div><div class="desc">생기 있고 살짝 새침한 느낌</div>
+    <audio controls preload="metadata" src="ko-Yeonhee.mp3"></audio>
+  </div>
+
+  <h2>영어</h2>
+  <div class="script">Wait— is this alien kidnapping people?! Yep. On purpose. But the reason is even worse. … But his real goal? …Fixing his failed marriage.</div>
+  <div class="card" data-choice="en-Hope" data-choice-group="영어" data-choice-label="Hope">
+    <div class="name">Hope</div><div class="desc">자연스러운 추임새가 섞인 수다스러운 톤, 사람 같은 느낌이 가장 강함</div>
+    <audio controls preload="metadata" src="en-Hope.mp3"></audio>
+  </div>
+  <div class="card" data-choice="en-Miranda" data-choice-group="영어" data-choice-label="Miranda">
+    <div class="name">Miranda</div><div class="desc">귀여움이 가장 확실한 달콤하고 발랄한 톤</div>
+    <audio controls preload="metadata" src="en-Miranda.mp3"></audio>
+  </div>
+  <div class="card" data-choice="en-Callie" data-choice-group="영어" data-choice-label="Callie">
+    <div class="name">Callie</div><div class="desc">귀엽지만 살짝 건조해서 과하지 않은 톤</div>
+    <audio controls preload="metadata" src="en-Callie.mp3"></audio>
+  </div>
+</main>
+</body>
+</html>
